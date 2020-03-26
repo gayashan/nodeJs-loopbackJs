@@ -1,24 +1,24 @@
 {
-  "name": "user",
-  "base": "User",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "email": {
-      "type": "string",
-      "default": "password"
-    }
-  },
-  "validations": [],
-  "relations": {
-    "Profile":{
-        "type" : "hasOne",
-        "model" : "Profile",
-        "foreignKey" : ""
-    }
-  },
-  "acls": [],
-  "methods": {}
+    "name": "user",
+    "base": "User",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
+    },
+    "properties": {
+        "email": {
+            "type": "string",
+            "default": "password"
+        }
+    },
+    "validations": [],
+    "relations": {
+        "Profile": {
+            "type": "hasOne",
+            "model": "Profile",
+            "foreignKey": ""
+        }
+    },
+    "acls": [],
+    "methods": {}
 }

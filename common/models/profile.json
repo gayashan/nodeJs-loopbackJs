@@ -1,40 +1,40 @@
 {
-  "name": "Profile",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
-  "properties": {
-    "first_name": {
-      "type": "string"
+    "name": "Profile",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+        "validateUpsert": true
     },
-    "last_name": {
-      "type": "string"
+    "properties": {
+        "first_name": {
+            "type": "string"
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "created_at": {
+            "type": "date"
+        },
+        "birth_date": {
+            "type": "date"
+        },
+        "age": {
+            "type": "number"
+        },
+        "history": {
+            "type": [
+                "object"
+            ]
+        }
     },
-    "created_at": {
-      "type": "date"
+    "validations": [],
+    "relations": {
+        "user": {
+            "type": "belongsTo",
+            "model": "user",
+            "foreignKey": ""
+        }
     },
-    "birth_date": {
-      "type": "date"
-    },
-    "age": {
-      "type": "number"
-    },
-    "history": {
-      "type": [
-        "object"
-      ]
-    }
-  },
-  "validations": [],
-  "relations": {
-      "user" : {
-        "type" : "belongsTo",
-        "model" : "user",
-        "foreignKey" : ""   
-      }
-  },
-  "acls": [],
-  "methods": {}
+    "acls": [],
+    "methods": {}
 }
